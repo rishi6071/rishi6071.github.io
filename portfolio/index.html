@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Rishi Soni" />
+    <meta name="description" content="It has all the necessary informations about me like my experience,
+        education, technical skills, communites in which i am added, contact details etc etc...." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Frontend Developer, Rishi Soni, JavaScript Developer" />
+
+    <!-- title -->
+    <title>Rishi Soni | Portfolio</title>
+    <link rel="icon" type="image/ico" sizes="144x144" href="./img/icons/title.png" />
+
+    <!-- Built-in Libraries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" /> -->
+
+    <!-- Google Fonts and Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom_css/indexStyle.css" />
+    <link rel="stylesheet" href="./css/custom_css/navbar.css" />
+    <link rel="stylesheet" href="./css/custom_css/preloader.css" />
+    <link rel="stylesheet" href="./css/custom_css/ripple.css">
+
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div class="loading"></div>
+
+    <!-- Navbar Start -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-white bg-white">
+            <a class="navbar-brand pl-3" href="./index.html">Rishi Soni</a>
+            <button class="navbar-toggler p-0 mr-3" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars menu-icon" aria-hidden="true" id="bar" onclick="openMenu(this)"></i>
+                    <i class="fa fa-times menu-close-icon" aria-hidden="true" id="cross" onclick="closeMenu(this)"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link ripple" href="#experience">Experience <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ripple" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ripple px-3" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ripple" href="#community">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ripple" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ripple" href="./projects.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Banner Start -->
+    <section>
+        <div class="container-fluid mb-2 py-md-4 py-3" id="banner-outer">
+            <div class="row">
+
+                <div class="col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-11 p-4" id="banner-inner">
+                    <h4 class="font-weight-bold pb-2">Hello World! <span id="my_name_box">This is <span
+                                class="myName">Rishi Soni</span></span>
+                    </h4>
+                    <p>I have 2 years of experience in creating web based solutions using technologies
+                        such as HTML5, CSS3, JavaScript, Bootstrap4 Framework and MaterializeCSS. And I am quite
+                        good in Java & C Programming as well.
+                        When I am not working, I enjoy swimming, and Listening Music in my free time.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- Experience Start -->
+    <main id="experience">
+        <div class="container-fluid">
+            <h4 class="section_heading">Experience</h4>
+            <hr class="w-100 thematic-break" />
+            <div class="container pb-3">
+
+                <div class="row pt-3 experience-education">
+                    <div class="col-md-3 col-12 px-4">
+                        <figure class="mb-4">
+                            <img src="./img/current_status/putatoe.png" class="tech-logo" style="width: 40%" alt="j" />
+                        </figure>
+                    </div>
+                    <div class="col-md-3 col-12 px-4">
+                        <h6 class="font-weight-bold date-position">Aug 2020 - Nov 2020</h6>
+                    </div>
+                    <div class="col-md-6 col-12 px-4 org-details">
+                        <h6 class="h6 font-weight-bold">Putatoe Technologies Pvt. Ltd.</h6>
+                        <div class="exp-edu-details">
+                            <p>Web Development Intern</p>
+                        </div>
+                        <hr class="w-100 thematic-break thematic-position" />
+                    </div>
+                </div>
+
+                <div class="row pt-3 experience-education">
+                    <div class="col-md-3 col-12 px-4">
+                        <figure class="mb-4">
+                            <img src="./img/current_status/technocolabs.png" class="tech-logo"
+                                style="transform: scale(1.5)" alt="j" />
+                        </figure>
+                    </div>
+                    <div class="col-md-3 col-12 px-4">
+                        <h6 class="font-weight-bold date-position">Jun 2020 - Aug 2020</h6>
+                    </div>
+                    <div class="col-md-6 col-12 px-4 org-details">
+                        <h6 class="h6 font-weight-bold">Technocolabs Information Technology</h6>
+                        <div class="exp-edu-details">
+                            <p>Web Development Intern</p>
+                        </div>
+                        <hr class="w-100 thematic-break thematic-position" />
+                    </div>
+                </div>
+
+                <div class="row pt-3 experience-education">
+                    <div class="col-md-3 col-12 px-4">
+                        <figure class="mb-4">
+                            <img src="./img/current_status/amstech.png" class="tech-logo amstech-logo" alt="j" />
+                        </figure>
+                    </div>
+                    <div class="col-md-3 col-12 px-4">
+                        <h6 class="font-weight-bold date-position">Jul - Aug</h6>
+                    </div>
+                    <div class="col-md-6 col-12 px-4 org-details">
+                        <h6 class="h6 font-weight-bold">Amstech Incorporation Pvt. Ltd.</h6>
+                        <div class="exp-edu-details">
+                            <p>Industrial Training (Java Development)</p>
+                        </div>
+                        <hr class="w-100 thematic-break thematic-position" />
+                    </div>
+                </div>
+
+                <div class="row pt-3 experience-education">
+                    <div class="col-md-3 col-12 px-4">
+                        <figure class="mb-4">
+                            <img src="./img/current_status/nidhi_logo.png" class="tech-logo"
+                                style="width: 45%; object-fit: contain;" alt="j" />
+                        </figure>
+                    </div>
+                    <div class="col-md-3 col-12 px-4">
+                        <h6 class="font-weight-bold date-position">Oct 2020 - Nov 2020</h6>
+                    </div>
+                    <div class="col-md-6 col-12 px-4 org-details">
+                        <h6 class="h6 font-weight-bold">Nidhiswaram Fashion</h6>
+                        <div class="exp-edu-details">
+                            <p>Worked as UI Developer to build Client's Project
+                                (<a href="https://www.nidhiswaram.com" target="_blank"
+                                    class="projectWeb">https://www.nidhiswaram.com/</a>)
+                            </p>
+                        </div>
+                        <hr class="w-100 thematic-break thematic-position" />
+                    </div>
+                </div>
+
+                <div class="row pt-3 experience-education">
+                    <div class="col-md-3 col-12 px-4">
+                        <figure class="mb-4">
+                            <img src="./img/current_status/nehaShivlingArt.jpg" class="tech-logo"
+                                style="object-fit: contain;" alt="j" />
+                        </figure>
+                    </div>
+                    <div class="col-md-3 col-12 px-4">
+                        <h6 class="font-weight-bold date-position">Jul 2019 - Aug 2019</h6>
+                    </div>
+                    <div class="col-md-6 col-12 px-4 org-details">
+                        <h6 class="h6 font-weight-bold">Neha Shivling Art</h6>
+                        <div class="exp-edu-details">
+                            <p>Worked as UI Developer to build Client's Project
+                                (<a href="https://www.nehashivlingart.com" target="_blank"
+                                    class="projectWeb">https://www.nehashivlingart.com/</a>)
+                            </p>
+                        </div>
+                        <hr class="w-100 thematic-break thematic-position" />
+                    </div>
+                </div>
+
+                <div class="row pt-3 experience-education">
+                    <div class="col-md-3 col-12 px-4">
+                        <figure class="mb-4">
+                            <img src="./img/current_status/ca.png" class="tech-logo" style="object-fit: contain;"
+                                alt="Campus Ambassador" />
+                        </figure>
+                    </div>
+                    <div class="col-md-3 col-12 px-4">
+                        <h6 class="font-weight-bold date-position">Jul 2019 - Aug 2019</h6>
+                        <h6 class="font-weight-bold date-position">Jul 2019 - Jul 2019</h6>
+                        <h6 class="font-weight-bold date-position">Nov 2019 - Nov 2019</h6>
+                    </div>
+                    <div class="col-md-6 col-12 px-4 org-details">
+                        <h6 class="h6 font-weight-bold">Viden.io</h6>
+                        <h6 class="h6 font-weight-bold">Awign Enterprises Pvt. Ltd.</h6>
+                        <h6 class="h6 font-weight-bold">National Engineering Olympiad 2.0</h6>
+
+                        <div class="exp-edu-details">
+                            <p>Campus Ambassador / Coordinator / Representative</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Experience End -->
+
+    <!-- Education Start -->
+    <section>
+        <div class="container-fluid" style="background-color: #e0e0e0;">
+            <h4 class="section_heading" id="education">Education</h4>
+            <hr class="w-100 thematic-break" />
+            <div class="container pb-3">
+                <div class="row pt-3 experience-education">
+                    <div class="col-md-6 col-12 px-4">
+                        <h6 class="font-weight-bold duration-position">2018 - Present</h6>
+                    </div>
+                    <div class="col-md-6 col-12 px-4 org-details">
+                        <h6 class="h6 font-weight-bold" title="CGPA: 8.56">Bachelors - Computer Science Engineering</h6>
+                        <div class="exp-edu-details">
+                            <p>Shivajirao Kadam Institute of Technology & Management</p>
+                            <p>{ Acropolis Technical Campus }</p>
+                            <p>Indore</p>
+                        </div>
+                        <hr class="w-100 thematic-break thematic-position" />
+                    </div>
+                </div>
+
+                <div class="row pt-3 experience-education">
+                    <div class="col-md-6 col-12 px-4 org-details">
+                        <h6 class="font-weight-bold duration-position">2017 - 2018</h6>
+                    </div>
+                    <div class="col-md-6 col-12 px-4 org-details">
+                        <h6 class="h6 font-weight-bold" title="Percentage: 83%">Higher Secondary (XII)</h6>
+                        <div class="exp-edu-details">
+                            <p>Gyan Sagar Vidya Niketan</p>
+                            <p>Indore</p>
+                        </div>
+                        <hr class="w-100 thematic-break thematic-position" />
+                    </div>
+                </div>
+
+                <div class="row pt-3 experience-education">
+                    <div class="col-md-6 col-12 px-4">
+                        <h6 class="font-weight-bold duration-position">2016 - 2017</h6>
+                    </div>
+                    <div class="col-md-6 col-12 px-4 org-details">
+                        <h6 class="h6 font-weight-bold" title="Percentage: 86%">Senior Secondary (X)</h6>
+                        <div class="exp-edu-details">
+                            <p>Gyan Sagar Vidya Niketan</p>
+                            <p>Indore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education End -->
+
+    <!-- Skills Start -->
+    <section>
+        <div id="skills"></div>
+        <div class="container-fluid mb-3">
+            <h4 class="section_heading">Skills</h4>
+            <hr class="w-100 thematic-break" />
+            <div class="row pb-4">
+                <div class="col-md-6 col-12 mt-2">
+                    <div class="tech-field float" title="HyperText Markup Language (v5)">
+                        <p class="pl-4"><img src="./img/tech_icons/html-5.png" alt="HTML5" /> <span>HTML5</span></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mt-2" title="Cascading Stylesheet (v3)">
+                    <div class="tech-field float-center">
+                        <p class="pl-4"><img src="./img/tech_icons/css.png" alt="CSS3" /> <span>CSS3</span></p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12 mt-2">
+                    <div class="tech-field float" title="Bootstrap CSS Framework (v4)">
+                        <p class="pl-4"><img src="./img/tech_icons/bootstrap4.png" alt="Bootstrap4" /> <span>Bootstrap
+                                4</span></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mt-2" title="JavaScript (ES6)">
+                    <div class="tech-field float-center">
+                        <p class="pl-4"><img src="./img/tech_icons/javascript.png" alt="JS" /> <span>JavaScript</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12 mt-2" title="React JS">
+                    <div class="tech-field float">
+                        <p class="pl-4"><img src="./img/tech_icons/react.ico" alt="React" /> <span>React JS</span></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mt-2" title="jQuery">
+                    <div class="tech-field float-center">
+                        <p class="pl-4"><img src="./img/tech_icons/jQuery.png" alt="jQuery" /> <span>jQuery</span></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mt-2" title="Java Standard Edition (JSE)">
+                    <div class="tech-field float">
+                        <p class="pl-4"><img src="./img/tech_icons/java.png" alt="Java" /> <span>Core Java</span></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mt-2" title="Structured Query Language">
+                    <div class="tech-field float-center">
+                        <p class="pl-4"><img src="./img/tech_icons/sql.png" alt="SQL" /> <span>SQL</span></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mt-2" title="C Programming Language">
+                    <div class="tech-field float">
+                        <p class="pl-4"><img src="./img/tech_icons/c.png" alt="C" /> <span>C Programming</span></p>
+                    </div>
+                </div>
+
+
+                <!-- <div class="col-md-6 col-12 mt-2" title="C++ Programming Language">
+                    <div class="tech-field float-center">
+                        <p class="pl-4"><img src="./img/tech_icons/cpp.png" alt="C++" /> <span>C++ Programming</span></p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- Skills End -->
+
+    <!-- Community Start -->
+    <section>
+        <div class="container-fluid" style="background-color: #e0e0e0;">
+            <h4 class="section_heading" id="community">Community</h4>
+            <h6 class="text-center"><small>In Which i am Working / Worked</small></h6>
+            <hr class="w-100 thematic-break" />
+            <div class="container pb-3">
+                <div class="row pt-3 experience-education">
+                    <div class="col-md-6 col-12 px-4">
+                        <h6 class="font-weight-bold duration-position">Jun 2020 - Present</h6>
+                    </div>
+                    <div class="col-md-6 col-12 px-4 org-details">
+                        <h6 class="h6 font-weight-bold" title="Tech Community">Facebook Developer Circles, Indore</h6>
+                        <div class="exp-edu-details">
+                            <p title="Member of VIP (Volunteer In Progress) Program">Volunteer</p>
+                        </div>
+                        <hr class="w-100 thematic-break thematic-position" />
+                    </div>
+                </div>
+
+                <div class="row pt-3 experience-education">
+                    <div class="col-md-6 col-12 px-4">
+                        <h6 class="font-weight-bold duration-position">April 2020 - Present</h6>
+                    </div>
+                    <div class="col-md-6 col-12 px-4 org-details">
+                        <h6 class="h6 font-weight-bold" title="NGO">Little Love Nonprofit Organization</h6>
+                        <div class="exp-edu-details">
+                            <p title="PR Member">Public Relation Member</p>
+                        </div>
+                        <hr class="w-100 thematic-break thematic-position" />
+                    </div>
+                </div>
+
+                <div class="row pt-3 experience-education">
+                    <div class="col-md-6 col-12 px-4">
+                        <h6 class="font-weight-bold duration-position">Jun 2019 - Feb 2020</h6>
+                    </div>
+                    <div class="col-md-6 col-12 px-4 org-details">
+                        <h6 class="h6 font-weight-bold" title="E-CELL">CIED - The Entrepreneurship Cell Member</h6>
+                        <div class="exp-edu-details">
+                            <p title="Shivajirao Kadam Institute of Technology and Management">
+                                Acropolis Technical Campus
+                            </p>
+                            <p>Indore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Community End -->
+
+    <!-- Contact Me Start -->
+    <section>
+        <div id="contact"></div>
+        <div class="container-fluid pb-4" style="background-color: #e0e0e0;">
+            <h4 class="section_heading">Contact Me</h4>
+            <hr class="w-100 thematic-break" />
+            <div class="container pb-3">
+                <div class="row pt-3">
+
+                    <div class="col-md-6 col-12 px-4">
+                        <form action="#" name="messageForm" id="msgeForm">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <input type="text" name="name" class="form-control mt-3" id="nam"
+                                            placeholder="Name" value="" required />
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <input type="email" name="mail" class="form-control mt-3" id="mail"
+                                            placeholder="Email" value="" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" class="form-control mt-2" id="sub"
+                                    placeholder="Subject" value="" required />
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="msge" cols="30" rows="4" class="form-control"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="SUBMIT" class="btn btn-primary pt-2 btn-block ripple" />
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-6 col-12 mt-4 px-4">
+                        <div class="contact-details">
+                            <h5 class="font-weight-bold">Rishi Soni</h5>
+                            <small>Frontend Development | Java</small>
+                        </div>
+                        <div class="contact-details mt-4">
+                            <h5 class="font-weight-bold">Phone:</h5>
+                            <small>+91 <a href="tel:9754370193" class="contact-link">9754370193</a></small>
+                        </div>
+                        <div class="contact-details mt-4">
+                            <h5 class="font-weight-bold">Email:</h5>
+                            <a href="mailto:rishisoni6071@gmail.com"
+                                class="small contact-link">rishisoni6071@gmail.com</a>
+                        </div>
+                        <div class="contact-details mt-4">
+                            <hr class="w-100 thematic-break" />
+                            <div class="mt-4">
+                                <a href="https://wa.me/9754370193" class="social-link" target="_blank">
+                                    <img src="./img/icons/whatsapp.svg" class="social-icon" alt="Whatsapp" />
+                                </a>
+                                <a href="https://www.facebook.com/rishi.soni.31508076" target="_blank"
+                                    class="social-link">
+                                    <img src="./img/icons/facebook.svg" class="social-icon" alt="Facebook" />
+                                </a>
+                                <a href="https://www.instagram.com/rishisoni6071/" target="_blank" class="social-link">
+                                    <img src="./img/icons/instagram.svg" class="social-icon" alt="Instagram" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/rishi-soni-26847717a" target="_blank"
+                                    class="social-link">
+                                    <img src="./img/icons/linkedin.svg" class="social-icon" alt="Linkedin" />
+                                </a>
+                                <a href="https://github.com/rishi6071" target="_blank" class="social-link">
+                                    <img src="./img/icons/github.svg" class="social-icon" alt="Github" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Me End -->
+
+    <!-- Footer Start -->
+    <footer class="py-1 pt-3 text-center">
+        <div class="container-fluid">
+            <p>Copyright © 2020 by Rishi Soni</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- <script src="./js/particles.js" defer></script> -->
+    <!-- <script src="./js/app.js" defer></script> -->
+
+    <!-- Built-in Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom Scripts -->
+    <script src="./js/custom_js/preloader.js"></script>
+    <script src="./js/custom_js/navbarToggler.js"></script>
+</body>
+
+</html>

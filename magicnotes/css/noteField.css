@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+.createnote_form {
+  box-shadow: 0px 0px 4px rgba(128, 126, 126, 0.6);
+  padding: 20px 20px 5px 20px !important;
+}
+
+.notefield_heading,
+.addnote_btn {
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.addnote_btn:hover {
+  background: rgba(55, 71, 79, 1);
+  color: white;
+}
+
+.notefield_heading {
+  color: darkslategray;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 15px;
+}
+
+textarea[name="notefield_content"] {
+  margin-top: 10px;
+}
+
+textarea[name="notefield_content"],
+input[name="notefield_title"],
+.addnote_btn {
+  border: 1px solid rgba(55, 71, 79, 0.6);
+  border-radius: 0;
+}
+
+textarea[name="notefield_content"]::placeholder,
+input[name="notefield_title"]::placeholder {
+    color: #37474f !important;
+}

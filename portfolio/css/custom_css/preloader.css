@@ -1,0 +1,18 @@
+/* || Page Preloader of index.html */
+.loading{
+    width: 100vw;
+    height: 100vh;
+    /*url('')*/
+    /**/
+    background: white 
+        url('https://profile.lps.org/images/loading-icon-2.gif')
+        center no-repeat;
+    position: fixed;
+    z-index: 99999;
+    background-size: 20%;
+}
+
+/*  https://codetea.com/content/images/2017/09/Goo-Loader.gif
+    https://profile.lps.org/images/loading-icon-2.gif
+*/
+/*---------------------------------------------------------------*/

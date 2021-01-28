@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+:root {
+    --m-reddish-color: #eb5252;
+    --m-darkGreyish-color: #004080;
+    --m-white-color: white;
+    --m-TimesNewRoman-font: "Times New Roman";
+}
+
+/************ || NAVBAR STYLING  ************/
+
+/* To make Website Logo Responsive */
+@media (max-width:350px) {
+    .navbar-brand img {
+        width: 130px;
+    }
+}
+@media (max-width:300px) {
+    .navbar-brand img {
+        width: 110px;
+    }
+}
+
+ul.optionFont {
+    font-size: 17px;
+}
+
+.headerBtn {
+    color: white;
+    color: var(--m-white-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #eb5252;
+    background-color:var(--m-reddish-color);
+    transition: 0.7s;
+}
+
+.headerBtn:hover {
+    background-color: #c9371a;
+    color: white;
+    color: var(--m-white-color);
+}
+
+/* for Reddish Hoverable Effect of Navbar Link */
+.reddish-link {
+    transition: color 0.6s;
+}
+.reddish-link:hover {
+    color: #eb5252;
+    color: var(--m-reddish-color);
+}
+li.active a span {
+    color: #eb5252;
+    color: var(--m-reddish-color);
+}
+
+a.nav-link:link {
+    transition: color 0.5s;
+}
+
+.dropdown-menu {
+    border: none;
+}
+.dropdown-item {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    color: rgb(128,128,128);
+    transition: 0.5s;
+}
+
+a.dropdown-item:hover {
+    color: #eb5252;
+    color: var(--m-reddish-color);
+}
+
+div.dropdown-menu a.active:hover {
+    color: white;
+    color: var(--m-white-color);
+}
+
+@media screen and (max-width:991px) {
+    .dropdown-menu {
+        margin-left: 45px;
+        width: 200px;
+        border-radius: 0 0 20px 20px;
+        border-color: rgba(128,128,128,0.1);
+    }
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}  
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Rishi Soni">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title tag & title icon -->
+    <title>FAQs | Coffee King</title>
+    <link rel="icon" href="./assets/img/logo/coffeeTitle.svg" type="image/ico">
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Google Font & Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/custom_css/preloader.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/indexStyle.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/typography.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/ripple.css">
+
+</head>
+
+<body onload="loadFunction()">
+
+    <!-- || PRELOADER -->
+    <div class="loading"></div>
+
+
+    <!-- || NAVBAR Start -->
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">COFFEE KING</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="./index.html" class="ripple">Home</a></li>
+                    <li><a href="./shop.html" class="ripple">Shop</a></li>
+                    <li><a href="./about.html" class="ripple">About</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li class="bg-brown"><a class="dropdown-trigger ripple active" href="#"
+                            data-target="nav-dropdown-1">Help<i class="material-icons right">arrow_drop_down</i></a>
+                    </li>
+                    <li><a class="dropdown-trigger ripple" href="#" data-target="nav-dropdown-2">Profile<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Large Screen Dropdown Structure -->
+        <ul id="nav-dropdown-1" class="dropdown-content">
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li class="active"><a href="./faqs.html">FAQs</a></li>
+        </ul>
+        <ul id="nav-dropdown-2" class="dropdown-content">
+            <li><a href="#">Edit Profile</a></li>
+            <li><a href="#">My Cart</a></li>
+            <li><a href="#">My Orders</a></li>
+        </ul>
+
+        <!-- Mobile Screen Dropdown Structure -->
+        <ul id="sidenav-dropdown-1" class="dropdown-content">
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li class="active"><a href="./faqs.html">FAQs</a></li>
+        </ul>
+        <ul id="sidenav-dropdown-2" class="dropdown-content">
+            <li><a href="#">Edit Profile</a></li>
+            <li><a href="#">My Cart</a></li>
+            <li><a href="#">My Orders</a></li>
+        </ul>
+
+        <!-- Side Nav -->
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <div class="user-view">
+                    <div class="background drk">
+                        <img src="./assets/img/sidenav/userSidenav.jpg">
+                    </div>
+                    <a href="#user"><img class="circle" src="./assets/img/sidenav/rishu.jpg"></a>
+                    <a href="#name"><span class="white-text name">John Doe</span></a>
+                    <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./about.html">About</a></li>
+            <!-- Dropdown Trigger -->
+            <li class="active"><a class="dropdown-trigger" href="#" data-target="sidenav-dropdown-1">Help
+                    <i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger ripple" href="#" data-target="nav-dropdown-2">Profile<i
+                        class="material-icons right">account_box</i></a></li>
+        </ul>
+    </header>
+    <!-- || NAVBAR End -->
+
+
+    <!-- FAQs Start -->
+    <main>
+        <!-- FAQs Heading -->
+        <section>
+            <div class="center-align font-bolder">
+                <h5 class="pt-4">Frequently Asked Questions & Answers <br>(FAQs)</h5>
+            </div>
+        </section>
+
+        <!-- FAQs Options -->
+        <section>
+            <div class="row pt-4">
+                <ul class="tabs">
+                    <li class="tab col s3"><a class="active" href="#payment">Payment</a></li>
+                    <li class="tab col s3"><a href="#delievery">Delivery</a></li>
+                    <li class="tab col s3"><a href="#orders">Orders</a></li>
+                    <li class="tab col s3"><a href="#account">Account</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FAQs Questions and Answers -->
+        <section>
+            <div class="mx-5 pt-4">
+                <ul class="collapsible popout">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">subtitles</i>What payment
+                            methods do you accept?</div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste recusandae quae perspiciatis ipsa amet necessitatibus maiores placeat quas, ea
+                                dolorem nostrum consequuntur molestias corporis similique error animi accusantium?
+                                Quibusdam minus distinctio cupiditate, eum, reprehenderit iusto dolore quia aliquid
+                                tempora officiis libero dignissimos praesentium rerum quod voluptates cumque. Quaerat,
+                                repellat tempora!
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">account_balance_wallet</i>Do you sell
+                            Gift Cards?</div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste recusandae quae perspiciatis ipsa amet necessitatibus maiores placeat quas, ea
+                                dolorem nostrum consequuntur molestias corporis similique error animi accusantium?
+                                Quibusdam minus distinctio cupiditate, eum, reprehenderit iusto dolore quia aliquid
+                                tempora officiis libero dignissimos praesentium rerum quod voluptates cumque. Quaerat,
+                                repellat tempora! ipsum dolor sit amet.
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">whatshot</i>How do i purchase a Gift
+                            Card?</div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste recusandae quae perspiciatis ipsa amet necessitatibus maiores placeat quas, ea
+                                dolorem nostrum consequuntur molestias corporis similique error animi accusantium?
+                                Quibusdam minus distinctio cupiditate, eum, reprehenderit iusto dolore quia aliquid
+                                tempora officiis libero dignissimos praesentium rerum quod voluptates cumque. Quaerat,
+                                repellat tempora! ipsum dolor sit amet.
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">add_shopping_cart</i>Why haven't i
+                            recieved my Gift Card?</div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste recusandae quae perspiciatis ipsa amet necessitatibus maiores placeat quas, ea
+                                dolorem nostrum consequuntur molestias corporis similique error animi accusantium?
+                                Quibusdam minus distinctio cupiditate, eum, reprehenderit iusto dolore quia aliquid
+                                tempora officiis libero dignissimos praesentium rerum quod voluptates cumque. Quaerat,
+                                repellat tempora! ipsum dolor sit amet.
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">style</i>I've lost my Gift Card,
+                            can i get a replacement?</div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iste recusandae quae perspiciatis ipsa amet necessitatibus maiores placeat quas, ea
+                                dolorem nostrum consequuntur molestias corporis similique error animi accusantium?
+                                Quibusdam minus distinctio cupiditate, eum, reprehenderit iusto dolore quia aliquid
+                                tempora officiis libero dignissimos praesentium rerum quod voluptates cumque. Quaerat,
+                                repellat tempora! ipsum dolor sit amet.
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- FAQs End -->
+
+
+    <!-- || FOOTER Start -->
+    <footer class="page-footer pt-5 pb-2 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-2">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Footer Menu</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-2" href="#!">About Us</a></li>
+                        <li><a class="grey-text text-lighten-2" href="#!">Contact Us</a></li>
+                        <li><a class="grey-text text-lighten-2" href="#!">FAQs</a></li>
+                        <li><a class="grey-text text-lighten-2" href="#!">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col m6 s12">
+                        <p class="mt-2 grey-text lighten-3"><em>© 2020 Copyright By Rishi Soni</em></p>
+                    </div>
+                    <div class="col m6 s12">
+                        <p class="right mt-2">
+                            <a class="grey-text text-lighten-4" href="#!" title="Facebook"><i
+                                    class="material-icons">facebook</i></a></a>
+                            <a class="grey-text text-lighten-4" href="#!" title="Email"><i
+                                    class="material-icons">email</i></a></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- || FOOTER End -->
+
+
+    <!-- || FIXED FLOATING BUTTON Start -->
+    <section>
+        <div class="fixed-action-btn">
+            <a title="Mode" class="btn-floating btn-large ripple">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a title="Insert Chart" class="btn-floating red ripple"><i
+                            class="material-icons">insert_chart</i></a></li>
+                <li><a title="Quote" class="btn-floating yellow darken-1 ripple"><i
+                            class="material-icons">format_quote</i></a></li>
+                <li><a title="Publish" class="btn-floating green ripple"><i class="material-icons">publish</i></a></li>
+                <li><a title="Attach File" class="btn-floating blue ripple"><i
+                            class="material-icons">attach_file</i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- || FIXED FLOATING BUTTON End -->
+
+
+    <!-- JavaScript (Built-in & Custom) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+
+    <script src="./assets/js/custom_js/preloader.js" async></script>
+    <script src="./assets/js/custom_js/custom.js" defer></script>
+
+</body>
+
+</html>
