@@ -7,3 +7,4 @@ Projects Showcasing
 4. https://rishi6071.github.io/allaboutus/
 5. https://rishi6071.github.io/hungrysnake/
 6. https://rishi6071.github.io/coffeeking/
+7. https://www.isohack.in
