@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* Zooming Effect */
+.inner:hover img{
+    transform: scale(1.03);
+}
+
+@media (max-width:768px)   {
+    .manage img{
+        display: block;
+        margin: 0 auto;
+    }
+    .manageText{
+        margin-top:20px;
+        text-align: center !important;
+    }
+
+    .author-name {
+        text-align: center;
+    }
+}
+
+@media (max-width:1500px)   {
+    .manageCartBt{
+        width:200px;
+    }
+}
+
+/* Product QUantity Button */
+.pdtQty{
+    border-right:none;
+    border-left:none;
+}
+.myQtyBt{
+    border-radius:0;
+}
+
+/* Product Author Name */
+.author{
+    color:cornflowerblue;
+    text-decoration: none !important;
+}
+a.author:hover{
+    color:purple;
+}

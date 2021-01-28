@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* ------------------- || EDIT PROFILE PAGE ------------------- */
+
+#account-profile {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+label {
+    font-size: 0.9em;
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
+/* ------------------- || THANKU PAGE ------------------- */
+
+.back-to-shop {
+    font-size: 14px !important;
+    font-variant: small-caps;
+}
+
+/* ------------------- || AUTHORS PAGE ------------------- */
+
+#famous-authors .media {
+    border: 1px solid rgba(128, 128, 128, 0.15);
+    border-radius: 5px;
+}
+
+#famous-authors .media-heading {
+    text-decoration: none;
+    color: #6C757D;
+}
+
+#famous-authors .media-heading:hover {
+    color: black;
+}
+
+#famous-authors p {
+    font-size: 0.95em;
+}
+
+#famous-authors img {
+    width: 75px;
+    border-radius: 50%;
+}
+
+/* ------------------- || REGISTER PAGE ------------------- */
+
+a.account-exist, a.terms-conditions, a.hoverLink {
+    text-decoration: none;
+}
+
+a.account-exist:hover, a.hoverLink:hover {
+    color: rebeccapurple;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer !important;
+}
+
+/* ------------------- || CHECKOUT PAGE ------------------- */
+
+a.pay {
+    text-decoration: none;
+}
+
+/* ------------------- || FAQS PAGE ------------------- */
+
+.service-nav {
+    margin-top: 20px;
+    float: right;
+}
+
+a.faqOpt {
+    color: black;
+    font-size: 10px !important;
+}
+
+a.faqOpt:hover {
+    color: grey;
+}
+
+.service-item {
+    margin-top: 15px;
+    transition: 0.2s;
+}
+
+.service-nav .nav-item {
+    border-bottom: 2px solid #e8eaf6;
+}
+
+.service-nav a.nav-link {
+    color: darkslategray;
+}
+
+@media screen and (max-width:576px) {
+    .service-nav {
+        float: left;
+    }
+}
+
+.question a {
+    text-decoration: none;
+}
+
+@keyframes faqs {
+    from {
+        margin-top: 500px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0;
+        opacity: 0.8;
+    }
+}
+
+#opacityEffect>div {
+    animation-name: faqs;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* ------------------- || SHOP PAGE ------------------- */
+
+.shop-category {
+    font-size: 13px;
+    border: 0;
+    line-height: normal;
+}
+
+.shop-category a {
+    text-decoration: none;
+}
+
+.shop-category a:hover {
+    color: rebeccapurple;
+}
+
+#filter-form input {
+    vertical-align: -10px !important;
+}
+
+@media screen and (max-width:576px) {
+    #shop-product .item {
+        display: block;
+        margin: 0 auto;
+    }
+}
