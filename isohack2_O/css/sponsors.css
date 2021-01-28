@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.sponsors_link {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sponsors_link img {
+    opacity: 0.8;
+    max-width: 100%;
+    max-height: 100px;
+    display: block;
+    margin: auto;
+    transition: all 0.5s;
+}
+
+.sponsors_link img:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .sponsors_link {
+        height: 80px;
+    }
+}
