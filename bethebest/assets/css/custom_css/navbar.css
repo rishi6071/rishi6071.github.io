@@ -1,0 +1,102 @@
+@charset "utf-8";
+/*********** || NAVBAR ***********/
+
+.navbar {
+    padding: 0.7em 1.2em;
+    -webkit-box-shadow: -1px 5px 15px rgba(0,0,0,0.65);
+    -moz-box-shadow: -1px 5px 15px rgba(0,0,0,0.65);
+    box-shadow:-1px 5px 15px rgba(0,0,0,0.65);
+}
+
+a.navbar-brand {
+    font-size: 1.4rem;
+    border: none;
+    word-spacing: -1px;
+}
+
+.brand-logo {
+    width: 60px;
+    height: 45px;
+    margin-right: 0.3em;
+}
+
+/* Website Name with its logo */
+.websiteName img { transition: 0.5s; }
+.websiteName img:hover { opacity: 0.5; }
+
+/** Toggle Menu Bar Icons */
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none;
+    border: none;
+}
+
+/** Menu Icon */
+.menu-icon,
+.menu-close-icon {
+    font-size: 1.4em;
+    color: lightgrey;
+}
+.menu-close-icon { display: none; }
+
+a.navbar-brand, a.nav-link { font-weight: 500; }
+
+@media screen and (max-width:576px) {
+    a.navbar-brand { font-size: 1.25em; }
+
+    .brand-logo {
+        width: 3rem;
+        height: 2.7rem;
+    }
+
+    .navbar-toggler { padding: 0 0.3em; }
+    .navbar-toggler-icon { width: 1.2em; }
+    .brand-logo { height: 35px; }
+}
+
+@media screen and (max-width:991px) {
+    .navbar-collapse { padding-left: 3%; }
+}
+
+/** General Style for all Links */
+a { transition: 0.4s; }
+
+
+/** Dropdown */
+.navbar-nav .dropdown-menu {
+    width: 160px;
+    text-align: center;
+}
+a.dropdown-item { 
+    padding: 0.9em auto; 
+    transition: 0.2s;
+}
+.dropdown-menu .dropdown-item:hover { 
+    background-color: lightgrey; 
+    color: rebeccapurple; 
+    font-weight: 600;
+}
+
+/* Navbar Dropdown Hoverable Effect */
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}  
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+}
+
+
+/* || Page BREADCRUMB */
+.breadcrumb-item a {
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    font-weight: 600;
+    color: rebeccapurple;
+}
+

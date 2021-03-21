@@ -1,0 +1,33 @@
+-----------> Snake Game !!!
+
+1 --> Square Arena!
+2 --> A Snake Body
+3 --> Key Detection (4 arrow Keys & WASD Buttons as well)
+4 --> Audio Click when Snake consumes food
+5 --> Randomly Generated Food once current food get consumed
+6 --> On Consuming Food lenght must increase
+
+Q. How do we make the Animation?
+Sol. Using setInterval() Function
+
+<script>
+    funtion xyz() {
+        // body
+    }
+</script>
+
+-----> Step 1- Create Arena
+
+    0   1   2   3   4
+0  eve
+
+1
+
+2
+
+3
+
+4
+
+
+-----> Step 2- Key Detection

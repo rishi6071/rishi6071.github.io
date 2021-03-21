@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(34, 53, 73);
+    overflow-x: hidden;
+}
+
+/******** Section Heading */
+
+.section_heading {
+    color: #a3aeba;
+    text-align: center;
+    margin-bottom: 40px !important;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-variant: small-caps;
+}
+
+.section_heading:hover {
+    cursor: progress;
+}
+
+.section_heading span {
+    padding: 10px;
+    border-bottom: 3px solid #6a1b9a;
+}
+
+
+/******** Website Scrollbar CSS */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(32,50,70); 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(32,50,70);
+}

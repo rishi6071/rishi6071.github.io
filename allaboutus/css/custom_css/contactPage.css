@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/************************ CONTACT FORM IN CONTACT PAGE ************************/
+:root {
+    --m-reddish-color: #eb5252;
+    --m-greyish-color: rgba(128,128,128,0.2);
+    --m-darkGreyish-color: #34495E;
+}
+
+::placeholder {
+    color: rgba(128,128,128,0.2);
+    color: var(--m-greyish-color);
+    letter-spacing: 0.8px;
+}
+
+.map-height {
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 450px;
+}
+
+form#contact-form input, #txt {
+    border:1px solid var(--m-greyish-color);
+    border-color: rgba(128,128,128,0.2);
+    font-size: small;
+    border-radius: 0;
+    padding: 15px 20px;
+}
+
+.sendBtn {
+    color: #eb5252;
+    color: var(--m-reddish-color);
+    letter-spacing: 2px;
+    font-weight: lighter;
+    padding: 15px 30px;
+    border: 1px solid rgba(235,82,82,0.5);
+    font-family: "Times New Roman";
+    border-radius: 0;
+    transition: 0.5s;
+}
+
+.sendBtn:hover {
+    color: white;
+    background-color: #eb5252;
+    background-color: var(--m-reddish-color);
+}
+
+.float-info {
+    float: right;    
+}
+
+.myDetails {
+    font-weight: bold;
+    font-family: "Constantia";
+    color: #34495E;
+    color: var(--m-darkGreyish-color);
+    font-size: 1.1rem;
+    letter-spacing: 0.8px;
+}
+
+.additional-info {
+    margin-left: 45px;
+    font-size: 0.9rem;
+}
+
+.info-box {
+    line-height: 0.8;
+}
+
+@media (max-width:767px) {
+    .float-info {
+        float: left;
+    }
+}

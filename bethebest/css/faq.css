@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+#faq_section .faq_link {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #a3aeba;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#faq_section .card {
+    background: transparent;
+    border: none !important;
+}
+
+#faq_section .card-header {
+    margin-top: 15px;
+    background-color: transparent;
+    border-bottom-color: rgba(163, 174, 186, 0.2);
+}
+
+@media screen and (max-width: 400px) {   
+    #faq_section .faq_link {
+        font-size: 14px;
+    }
+}
+
+#faq_section .card-body {
+    color: #8694a4;
+}
+
+#faq_section .faq_hand {
+    font-size: 20px;
+    color: #a3aeba;
+}
+
+.faq_division {
+    height: 2px;
+    background: rgba(163, 174, 186, 0.5);
+    border-radius: 50px;
+    transform: translateY(12px);
+}

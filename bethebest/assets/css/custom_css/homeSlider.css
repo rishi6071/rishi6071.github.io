@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/****** || Slider Section ******/
+
+.carouselBG{
+    background-color: rgba(0,0,0,0.2);
+    border-radius:15px;
+    line-height: 1;
+}
+
+.carousel-item img { object-fit: cover; }
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:768px) {
+    .blockquote {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:576px) {
+    .blockquote {
+        font-size: 0.75rem;
+    }
+}
+
+/* @media screen and (max-width:992px) {
+    .carousel-item img { height: 500px; }
+}
+
+@media screen and (max-width:768px) {
+    .carousel-item img { height: 400px; }
+}
+
+@media screen and (max-width:576px) {
+
+    .carouselBG { background-color: rgba(0,0,0,0.3); }
+    .carousel-item img { height: 300px; }
+} */
+

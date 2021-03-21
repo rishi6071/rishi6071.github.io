@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+#scroll_bar {
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    z-index: 999;
+    transform: translate(0%, -50%);
+    width: 140px;
+    line-height: 2.2;
+    text-align: left;
+    font-size: 13px;
+}
+
+.scrollbar_link {
+    /* rgba(140,21,149,0.7) */
+    border-left: 1.5px solid rgba(119, 136, 153, 1);
+    border-radius: 5px;
+    padding: 14px 10px;
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+}
+
+.scrollbar_link:hover {
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+}
+
+.scrollbar_link span:nth-child(2) {
+    display: none;
+}
+
+.scrollbar_link:hover span:nth-child(2) {
+    display: inline !important;
+    animation-name: scrollRight;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes scrollRight {
+    0% {
+        position: absolute;
+        left: 0px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        position: absolute;
+        left: 32px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #scroll_bar {
+        display: none;
+    }
+}

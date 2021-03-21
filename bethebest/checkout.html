@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta name="author" content="Rishi Soni" />
+    <meta name="description" content="BeTheBest Online Books Store" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- title tag -->
+    <title>Checkout | Be The Best</title>
+    <!-- title bar icon -->
+    <link rel="icon" type="image/ico" href="./assets/img/logo/logo.jpg" />
+
+    <!-- Google Font & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Built-in CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/custom_css/indexstyle.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/gotoTopButton.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/preloader.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/footer.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/multiplePage.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/ripple.css">
+
+  </head>
+  <body onload="loadFunction()">
+
+    <!-- || PRELOADER -->
+    <div class="loading"></div>
+
+
+    <!-- || NAVBAR Start -->
+    <header id="top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand text-success websiteName" href="index.html">
+                <img src="./assets/img/logo/logo.jpg" alt="Logo" class="brand-logo"/>
+                Be The Best 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <!-- <i class="fa fa-bars menu-icon" aria-hidden="true" id="bar" onclick="openMenu(this)"></i>
+                <i class="fa fa-times menu-close-icon" aria-hidden="true" id="cross" onclick="closeMenu(this)"></i> -->
+              </span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./authors.html">Authors</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Help
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item ripple" href="./contact.html">Contact Us</a>
+                      <a class="dropdown-item ripple" href="./about.html">About Us</a>
+                      <a class="dropdown-item ripple" href="./faqs.html">FAQs</a>
+                    </div>
+                  </li>
+                <li class="nav-item dropdown mr-2">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Profile
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item ripple" href="./profile.html">
+                      <i class="fa fa-user" aria-hidden="true" style="font-size: 23px;"></i> Edit Profile
+                    </a>
+                    <a class="dropdown-item ripple active" href="./cart.html">My Cart</a>
+                    <a class="dropdown-item ripple" href="./myorders.html">My Orders</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item ripple" href="#">LOG OUT</a>
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn ripple btn-outline-success my-2 px-3 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+        </nav>
+    </header>
+    <!-- || NAVBAR End -->
+
+
+    <!-- || PAGE BREADCRUMB Start -->
+    <section>
+        <nav class="breadcrumb py-4 pl-4 mb-3">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="./cart.html">Cart</a></li>
+            <li class="breadcrumb-item">Checkout</li>
+        </nav>
+    </section>
+    <!-- || PAGE BREADCRUMB End -->
+
+
+    <!-- || RETURNING CUSTOMER Start -->
+    <section>
+        <div class="container border px-sm-4 px-3 pt-4 pb-2 ">
+            <p class="text-secondary">Returning customer? 
+                <a href="./index.html#jump" class="account-exist">Click here</a> to login
+            </p>
+        </div>
+    </section>
+    <!-- || RETURNING CUSTOMER End -->
+
+
+    <!-- || MAIN DETAILS Start -->
+    <main>
+        <div class="container mb-5">
+            <div class="row">
+                
+                <!-- || Billing Details -->
+                <div class="col-md-6 col-12 mt-5">
+                  <h4 class="mb-2">Billing Details</h4>
+                  <div class="border">
+                    <form action="#" method="POST">
+                        <div class="form-group px-sm-4 px-3 pt-4">
+                            <label for="country">Country <span class="text-danger">*</span></label>
+                            <select class="form-control required" id="country1">
+                                <option value="India">India</option>
+                                <option value="Australia">Austrailia</option>
+                                <option value="Banglades  h">Bangladesh</option>
+                                <option value="SriLanka">Sri Lanka</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Russia">Russia</option>
+                            </select>
+                        </div>
+    
+                        <div class="row pt-1 px-sm-4 px-3">
+                            <div class="col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="fName">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" required />
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="lName">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" required />
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-group px-sm-4 px-3 pt-1">
+                            <label for="companyName">Company Name</label>
+                            <input type="text" class="form-control" />
+                        </div>
+    
+                        <div class="form-group px-sm-4 px-3 pt-1">
+                            <label for="address1">Address <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control text-secondary" placeholder="Street Address" required />
+                            
+                            <div class="form-group pt-3">
+                                <input type="text" class="form-control text-secondary" 
+                                    placeholder="Appartment, unit etc. (Optional)" />
+                            </div>
+                        </div>
+    
+                        <div class="row pt-1 px-sm-4 px-3">
+                            <div class="col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="state1">State / Country <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-12">
+                                <div class="form-group">
+                                  <label for="postal">Posta / Zip <span class="text-danger">*</span></label>
+                                  <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row pt-1 px-sm-4 px-3">
+                            <div class="col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="state1">Email Address <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="postal">Phone Number <span class="text-danger">*</span></label>
+                                    <input type="tel" maxlength="10" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-group pt-4 px-sm-4 px-3">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="createAcc" name="createAccount">
+                                <label class="custom-control-label" style="font-size:13px;" 
+                                    for="createAcc">Create an Account?
+                                </label>  
+                            </div>
+                            <div style="display:none;" class="pt-3" id="makeAcc">
+                                <p class="text-secondary small">Create an account by entering the information below. 
+                                    If you are a returning customer please login at the top of the page.
+                                </p>
+                                <div class="form-group">
+                                    <label for="accPswd">Account Password</label>
+                                    <input type="text" class="form-control" />
+                                </div>    
+                            </div>
+                        </div>
+    
+                        <div class="form-group pt-2 px-sm-4 px-3">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="diffAddress" name="shipToDiffAddress">
+                                <label class="custom-control-label" style="font-size:13px;" for="diffAddress">
+                                    Ship to Different Address?
+                                </label>  
+                            </div>
+
+                            <!-- Hidden Initially -->
+                            <div style="display:none;" id="showDiffAddress">
+                                <form action="#">
+                                    <div class="form-group px-sm-4 px-3 pt-3">
+                                        <label for="country">Country <span class="text-danger">*</span></label>
+                                        <select class="form-control required" id="country1">
+                                            <option>India</option>
+                                            <option>Austrailia</option>
+                                            <option>Bangladesh</option>
+                                            <option>Sri Lanka</option>
+                                            <option>Colombia</option>
+                                            <option>Russia</option>
+                                        </select>
+                                    </div>
+                
+                                    <div class="row pt-1 px-sm-4 px-3">
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="fName">First Name <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="lName">Last Name <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" required />
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group px-sm-4 px-3 pt-1">
+                                        <label for="companyName">Company Name</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                
+                                    <div class="form-group px-sm-4 px-3 pt-1">
+                                        <label for="address1">Address <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control text-secondary" placeholder="Street Address" required />
+                                    
+                                        <div class="form-group pt-3">
+                                            <input type="text" class="form-control text-secondary" 
+                                                placeholder="Appartment, unit etc. (Optional)" />
+                                        </div>
+                                    </div>
+                
+                                    <div class="row pt-1 px-sm-4 px-3">
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="state1">State / Country <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="postal">Posta / Zip <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="row pt-1 px-sm-4 px-3">
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="state1">Email Address <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="postal">Phone Number <span class="text-danger">*</span></label>
+                                                <input type="tel" maxlength="10" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+    
+                            <div class="form-group pt-2 px-sm-4 px-3 mb-4">
+                                <label for="orderNote">Order Notes</label>
+                                <textarea name="OrderNotes" id="orderNote" cols="30" rows="3" class="form-control" 
+                                    placeholder="Write your notes here..."></textarea>
+                            </div>
+                        </form>
+                  </div>
+                </div>
+
+                <!-- Coupen Code & Your Order -->
+                <div class="col-md-6 col-12 mt-5">
+
+                    <!-- Coupen Code -->
+                    <div>
+                        <h4>Coupen Code</h4>
+                        <div class="border">
+                            <div class="container py-sm-5 py-4 px-sm-4 px-3">
+                                <h6>Enter your coupen code if you have one</h6>
+                                <div class="input-group mt-3 w-75">
+                                    <input type="text" class="form-control" placeholder="Coupen Code" aria-label="Coupen Code" 
+                                        aria-describedby="basic-addon2" />
+                                    <div class="input-group-append">
+                                      <button class="btn ripple btn-secondary" type="button"><span class="applyBt small">APPLY</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Your Order -->
+                    <div class="mt-5">
+                        <h4>Your Order</h4>
+                        <div class="border">
+                            <div class="container pt-5 pb-4 px-sm-4 px-3">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <th>Product</th>
+                                        <th>Total</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>RD Sharma x 1</td>
+                                            <td>Rs.650</td>
+                                        </tr>
+                                        <tr>
+                                            <td>HC Verma x 1</td>
+                                            <td>Rs.550</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chetan Bhagat Comics x 2</td>
+                                            <td>Rs.800</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Cart Subtotal</th>
+                                            <td>Rs.2000</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Order Total</th>
+                                            <th>Rs.2000</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="p-3 mx-sm-5 mx-3 mb-3 border">
+                                <a href="#open" data-toggle="collapse" class="link pay" >Direct Bank Transfer</a>
+                                <div class="pt-2 collapse" id="open">
+                                    <p class="text-secondary small" >Make your payment directly into our bank account. Please use your 
+                                        Order ID as the payment reference. Your order won’t be shipped 
+                                        until the funds have cleared in our account.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="p-3 mx-sm-5 mx-3 mb-4 border">
+                                <a href="#payPal" data-toggle="collapse" class="link pay">Paypal</a>
+                                <div class="pt-2 collapse" id="payPal">
+                                    <p class="text-secondary small">Make your payment directly into our bank account. Please use your 
+                                        Order ID as the payment reference. Your order won’t be shipped 
+                                        until the funds have cleared in our account.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mx-sm-5 mx-3 mb-5">
+                                <a href="thankyou.html" class="btn ripple btn-block btn-secondary btn-lg">
+                                    <small class="orderBt text-white">PLACE ORDER</small>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- || MAIN DETAILS End -->
+
+
+    <!-- || FOOTER Start -->
+    <footer>
+      <div class="Container bg-dark text-white pb-2">
+          <div class="pt-5">
+              <h1 class="text-center">
+                  <a href="./index.html" class="link footerHeading">Be The Best</a>
+              </h1>
+              <hr class="w-25 mx-auto mt-0" id="thematicBreak" >
+              <br><br>    
+          </div>
+          <div class="social-links-warp">
+            <div class="container mx-auto">
+              <div class="row">
+
+                <div class="col-md-3 col-6 offset-md-1 footer-border-box text-center">
+                  <div class="row mx-auto">
+                    <div class="col-sm-6">
+                      <ul class="footer-list">
+                        <li><a href="./about.html" class="footer-link">About</a></li>
+                        <li><a href="./contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="./faqs.html" class="footer-link">FAQs</a></li>
+                      </ul>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                      <ul class="footer-list">
+                        <li><a href="./shop.html" class="footer-link">Shop</a></li>
+                        <li><a href="./authors.html" class="footer-link">Authors</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 col-6 offset-md-1 footer-border-box">
+                  <h5>Visit Our Store:</h5>
+                  <h6>Customer Service- <a href="tel:9754370193" class="footer-link">9754370193</a></h6>
+                </div>
+
+                <div class="col-md-3 offset-md-1 social-icon-list">
+                  <h6>Stay Connected:</h6>
+                  <nav>
+                    <a href="#"><img src="./assets/img/icons/facebook.svg" class="social-link" 
+                      title="Facebook" width="23px" alt="fb"></a>
+                    <a href="#"><img src="./assets/img/icons/insta.svg" class="social-link" 
+                      title="Twitter" width="23px" alt="twitter"></a>
+                    <a href="#"><img src="./assets/img/icons/twitter.svg" class="social-link" 
+                      title="Instagram" width="23px" alt="insta"></a>
+                    <a href="#"><img src="./assets/img/icons/google-plus.svg" class="social-link" 
+                      title="Instagram" width="23px" alt="insta"></a>
+                    <a href="#"><img src="./assets/img/icons/youtube.svg" class="social-link" 
+                      title="Instagram" width="23px" alt="insta"></a>
+                  </nav>
+                </div>
+
+                <div class="float-social-list">
+                  <h6>Stay Connected:</h6>
+                  <nav>
+                    <a href="#"><img src="./assets/img/icons/facebook.svg" class="social-link" 
+                      title="Facebook" width="23px" alt="fb"></a>
+                    <a href="#"><img src="./assets/img/icons/insta.svg" class="social-link" 
+                      title="Twitter" width="23px" alt="twitter"></a>
+                    <a href="#"><img src="./assets/img/icons/twitter.svg" class="social-link" 
+                      title="Instagram" width="23px" alt="insta"></a>
+                    <a href="#"><img src="./assets/img/icons/google-plus.svg" class="social-link" 
+                      title="Instagram" width="23px" alt="insta"></a>
+                    <a href="#"><img src="./assets/img/icons/youtube.svg" class="social-link" 
+                      title="Instagram" width="23px" alt="insta"></a>
+                  </nav>
+                </div>
+              </div>
+
+              <div class="copyright">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> 
+                <p class="text-center small mt-5 pb-1">Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </div>
+            </div>
+          </div>  
+      </div>
+    </footer>
+    <!-- || FOOTER End -->
+
+    <!-- Go to Top Button Start -->
+    <section>
+      <div class="topButtonPosition">
+        <a href="#top" title="Go To Top" class="btn ripple topButton">
+          <svg class="bi bi-shift-fill" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M7.27 2.047a1 1 0 011.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v3a1 1 0 01-1 1h-5a1 1 0 01-1-1v-3H1.654C.78 10.5.326 9.455.924 8.816L7.27 2.047z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <!-- Go to Top Button End -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+    <!-- Built-in Scripts -->
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+
+
+    <!-- Custom Scripts -->
+    <script src="./assets/js/custom_js/preloader.js" defer></script>
+    <script src="./assets/js/custom_js/navbarToggler.js" async></script>
+    <script src="./assets/js/custom_js/checkout.js" async></script>
+
+  </body>
+</html>

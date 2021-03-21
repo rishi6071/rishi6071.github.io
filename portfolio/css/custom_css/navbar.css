@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/****** || NAVBAR ******/
+.navbar {
+    padding: 0;
+    border-bottom: 1px solid #182153;
+    -webkit-box-shadow: -1px 5px 15px rgba(0,0,0,0.15);
+    -moz-box-shadow: -1px 5px 15px rgba(0,0,0,0.15);
+    box-shadow:-1px 5px 15px rgba(0,0,0,0.15);
+}
+
+a.navbar-brand {
+    font-size: 1.7rem;
+    border: none;
+    color: #182153;
+}
+
+a.navbar-brand:hover {
+    color: #182153;
+}
+
+/** Toggle Menu Bar Icons */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.menu-icon,
+.menu-close-icon {
+    font-size: 1.5em;
+    color: #182153;
+}
+
+.menu-close-icon {
+    display: none;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    padding: 22px 0;
+    color: #182153;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #182153;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .navbar {
+        padding: 10px 8px;
+    }
+}
