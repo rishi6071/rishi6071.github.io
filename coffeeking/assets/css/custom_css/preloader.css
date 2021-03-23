@@ -1,0 +1,19 @@
+/* Page Preloader of index.html */
+.loading {
+    width: 100vw;
+    height: 100vh;
+    /* https://media1.giphy.com/media/RgzAimVNu51jHb3fGi/giphy.gif */
+    /* https://krisp.ca/mobile/wp-content/uploads/2016/08/animat-coffee-color.gif */
+    background: rgb(60,42,30) 
+        url('https://media1.giphy.com/media/RgzAimVNu51jHb3fGi/giphy.gif')
+        center no-repeat;
+    position: fixed;
+    z-index: 99999;
+    background-size: 8%;
+}
+
+@media screen and (max-width:768px) {
+    .loading {
+        background-size: 30%;
+    }
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Rishi Soni">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title tag & title icon -->
+    <title>Contact | Coffee King</title>
+    <link rel="icon" href="./assets/img/logo/coffeeTitle.svg" type="image/ico">
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Google Font & Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/custom_css/preloader.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/indexStyle.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/typography.css">
+    <link rel="stylesheet" href="./assets/css/custom_css/ripple.css">
+
+    <link rel="stylesheet" href="./assets/css/custom_css/contact.css">
+
+</head>
+
+<body onload="loadFunction()">
+
+    <!-- || PRELOADER -->
+    <div class="loading"></div>
+
+
+    <!-- || NAVBAR Start -->
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">COFFEE KING</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="./index.html" class="ripple">Home</a></li>
+                    <li><a href="./shop.html" class="ripple">Shop</a></li>
+                    <li><a href="./about.html" class="ripple">About</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li class="bg-brown"><a class="dropdown-trigger active ripple" href="#"
+                            data-target="nav-dropdown-1">
+                            Help<i class="material-icons right">arrow_drop_down</i></a>
+                    </li>
+                    <li><a class="dropdown-trigger ripple" href="#" data-target="nav-dropdown-2">Profile<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Large Screen Dropdown Structure -->
+        <ul id="nav-dropdown-1" class="dropdown-content">
+            <li class="active"><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./faqs.html">FAQs</a></li>
+        </ul>
+        <ul id="nav-dropdown-2" class="dropdown-content">
+            <li><a href="#">Edit Profile</a></li>
+            <li><a href="#">My Cart</a></li>
+            <li><a href="#">My Orders</a></li>
+        </ul>
+
+        <!-- Mobile Screen Dropdown Structure -->
+        <ul id="sidenav-dropdown-1" class="dropdown-content">
+            <li class="active"><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./about.html">FAQs</a></li>
+        </ul>
+        <ul id="sidenav-dropdown-2" class="dropdown-content">
+            <li><a href="#">Edit Profile</a></li>
+            <li><a href="#">My Cart</a></li>
+            <li><a href="#">My Orders</a></li>
+        </ul>
+
+        <!-- Side Nav -->
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <div class="user-view">
+                    <div class="background drk">
+                        <img src="./assets/img/sidenav/userSidenav.jpg">
+                    </div>
+                    <a href="#user"><img class="circle" src="./assets/img/sidenav/rishu.jpg"></a>
+                    <a href="#name"><span class="white-text name">John Doe</span></a>
+                    <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./about.html">About</a></li>
+            <!-- Dropdown Trigger -->
+            <li class="active"><a class="dropdown-trigger" href="#" data-target="sidenav-dropdown-1">Help<i
+                        class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger ripple" href="#" data-target="nav-dropdown-2">Profile<i
+                        class="material-icons right">account_box</i></a></li>
+        </ul>
+    </header>
+    <!-- || NAVBAR End -->
+
+
+    <!-- || CONTACT FORM & CAFE HOURS Start -->
+    <main class="brown lighten-5">
+        <div class="py-5 mx-5">
+            <div class="row">
+                <!-- || GET IN TOUCH -->
+                <div class="col m6 s12 mt-4">
+                    <h5 class="font-bolder mb-5 get-in-touch">GET IN TOUCH</h5>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col m6 s12">
+                                    <input id="full_name" type="text" class="validate">
+                                    <label for="full_name">Full Name</label>
+                                </div>
+                                <div class="input-field col m6 s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="subject" type="text" class="validate">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="message" class="materialize-textarea" data-length="750"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <label>
+                                        <input type="checkbox" class="filled-in brown-text" checked />
+                                        <span>I am not a Robot</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- || OPEN HOURS -->
+                <div class="col offset-m1 m5 s12 mt-4 mb-5">
+                    <div class="pt-4">
+                        <h5 class="font-bolder mb-5 get-in-touch">ADDRESS</h5>
+                        <div class="contact-info">
+                            <p>Coffee King</p>
+                            <p>16-C Dwarkapuri, Indore (M.P.)</p>
+                            <p>452009</p>
+                        </div>
+                    </div>
+                    <div class="pt-5">
+                        <h6 class="font-bolder mb-5 get-in-touch">BUSINESS HOURS</h6>
+                        <div class="contact-info">
+                            <p><span class="font-bolder">Monday</span> : Closed</p>
+                            <p><span class="font-bolder">Tuesday - Friday</span> : 10:00 AM - 10:00 PM</p>
+                            <p><span class="font-bolder">Saturday - Sunday</span> : 10:00 AM - 11:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- || CONTACT FROM & CAFE HOURS End -->
+
+
+    <!-- || ADDRESS GOOGLE MAP Start -->
+    <section>
+        <div class="mb-5">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.9197194544245!2d75.82350171427385!3d22.694032285120407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fc339bebcfa7%3A0x650249ff0a8d7e4d!2sGanesh%20Mandir%20Dwarkapuri!5e0!3m2!1sen!2sin!4v1596711492672!5m2!1sen!2sin"
+                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+        </div>
+    </section>
+    <!-- || ADDRESS GOOGLE MAP End -->
+
+
+    <!-- || FOOTER Start -->
+    <footer class="page-footer pt-5 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-2">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Footer Menu</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-2" href="#!">About Us</a></li>
+                        <li><a class="grey-text text-lighten-2" href="#!">Contact Us</a></li>
+                        <li><a class="grey-text text-lighten-2" href="#!">FAQs</a></li>
+                        <li><a class="grey-text text-lighten-2" href="#!">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col m6 s12">
+                        <p class="mt-2 grey-text lighten-3"><em>© 2020 Copyright By Rishi Soni</em></p>
+                    </div>
+                    <div class="col m6 s12">
+                        <p class="right mt-2">
+                            <a class="grey-text text-lighten-4" href="#!" title="Facebook"><i
+                                    class="material-icons">facebook</i></a></a>
+                            <a class="grey-text text-lighten-4" href="#!" title="Email"><i
+                                    class="material-icons">email</i></a></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- || FOOTER End -->
+
+
+    <!-- || FIXED FLOATING BUTTON Start -->
+    <section>
+        <div class="fixed-action-btn">
+            <a title="Mode" class="btn-floating btn-large ripple">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a title="Insert Chart" class="btn-floating red ripple"><i
+                            class="material-icons">insert_chart</i></a></li>
+                <li><a title="Quote" class="btn-floating yellow darken-1 ripple"><i
+                            class="material-icons">format_quote</i></a></li>
+                <li><a title="Publish" class="btn-floating green ripple"><i class="material-icons">publish</i></a></li>
+                <li><a title="Attach File" class="btn-floating blue ripple"><i
+                            class="material-icons">attach_file</i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- || FIXED FLOATING BUTTON End -->
+
+
+    <!-- JavaScript (Built-in & Custom) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+
+    <script src="./assets/js/custom_js/preloader.js" async></script>
+    <script src="./assets/js/custom_js/custom.js" defer></script>
+
+</body>
+
+</html>
