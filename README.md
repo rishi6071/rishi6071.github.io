@@ -5,6 +5,10 @@
 
 - 🔭 I’m currently working on **Apisero Inc.**
 
+- I have built a [JAMstack eCommerce Application](https://rishi-commercejs.netlify.app)
+
+- Also made [Netflix Clone](https://rishi-netflixclone.netlify.app)
+
 - 👨‍💻 All of my projects are available at [https://rishisoni.in](https://rishisoni.in)
 
 - 💬 Ask me about **React, JavaScript, UI & Python**
